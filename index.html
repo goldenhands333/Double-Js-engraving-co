@@ -1,15 +1,172 @@
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  margin-top:20px;
-}
-.card{
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:18px;
-  box-shadow:0 2px 6px rgba(0,0,0,.25);
-  transition:transform .15s ease;
-}
-.card:hover{ transform:translateY(-4px); }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Double J’s Ink-N-Etch — Engraving</title>
+  <meta name="description" content="Custom paintball marker & barrel engraving. Proof-first, fast turnaround. Serving St. Louis & St. Charles, MO." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0b0d17; --panel:#121735; --line:#1b2035; --text:#c8ccdc; --title:#f5f7ff; --link:#8ab4ff; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Outfit',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    header{padding:18px 0 8px;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:14px;justify-content:center}
+    .brand img{height:76px;border-radius:10px}
+    h1,h2,h3{color:var(--title);margin:0 0 .6rem}
+    .sub{opacity:.9}
+    .hero{padding:30px 0 16px;text-align:center}
+    .cta{display:flex;gap:12px;margin-top:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border:1px solid #3a3f66;border-radius:10px;color:#e3e7ff}
+    .btn.primary{background:#4a6cff;border-color:#4a6cff}
+    .section{padding:34px 0;border-top:1px solid var(--line)}
+    /* === Advantages cards grid === */
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s}
+    .card:hover{transform:translateY(-4px)}
+    /* Gallery */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .grid img{width:100%;border-radius:10px;border:1px solid var(--line);background:#0b0d17}
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:10px}
+    .price-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .fine{opacity:.8;font-size:12px}
+    footer{padding:24px 0;border-top:1px solid var(--line);margin-top:34px;text-align:center}
+    .footer-logo{height:56px;opacity:.9;display:block;margin:0 auto 8px}
+    /* Form */
+    form{max-width:640px;margin:0 auto}
+    input,select,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0b0d17;color:#e3e7ff}
+    label{display:block;margin:8px 0 2px;color:var(--title)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- TOP LOGO + TITLE -->
+    <header>
+      <div class="brand">
+        <img src="IMG_3869.png" alt="Double J’s Ink-N-Etch logo">
+        <div>
+          <h1>Double J’s Ink-N-Etch</h1>
+          <div class="sub">Paintball marker & barrel engraving • Proof-first • Fast turnarounds</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <p style="max-width:760px;margin:8px auto 0;line-height:1.6">
+        Custom, precise engraving for markers, barrels, and accessories. Serving
+        <strong>St. Louis & St. Charles, MO</strong>. Proof within 24 hours.
+        Standard turnaround 2–5 business days (rush available).
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get a Quote</a>
+        <a class="btn" href="#pricing">See Pricing</a>
+      </div>
+    </section>
+
+    <!-- COMPETITIVE ADVANTAGES -->
+    <section id="why" class="section">
+      <h2>Competitive Advantages</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Pro-Level Precision</h3>
+          <p>Fiber laser accuracy to 0.01&nbsp;mm with consistent depth and clean edges.</p>
+        </div>
+        <div class="card">
+          <h3>Marker-Safe Fixturing</h3>
+          <p>Custom jigs for popular platforms to protect anodizing and alignment.</p>
+        </div>
+        <div class="card">
+          <h3>Design to Done Fast</h3>
+          <p>Proof within 24 hours. Standard turnaround 2–5 business days.</p>
+        </div>
+        <div class="card">
+          <h3>No-Heat Process</h3>
+          <p>Non-contact fiber laser with masking to prevent marring.</p>
+        </div>
+        <div class="card">
+          <h3>Team & Event Deals</h3>
+          <p>Volume discounts for 6+ items and event bundles.</p>
+        </div>
+        <div class="card">
+          <h3>Proof-First Policy</h3>
+          <p>We don’t engrave until you approve scale, placement, and coverage.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <img src="IMG_3869.png" alt="Logo sample">
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <h2>Pricing Snapshot</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Design & Setup</h3>
+          <ul>
+            <li>Simple vector setup: $20–$40</li>
+            <li>Complex vectorization: $60–$120</li>
+            <li>Layout & proof package: $25 (credited on full-body)</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Turnaround</h3>
+          <ul>
+            <li>Standard: 2–5 business days</li>
+            <li>Rush (as available): +25%</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine">Final quotes depend on coverage, material, and art complexity. We avoid critical seal/tolerance surfaces.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:goldenhandsinnovations@gmail.com">goldenhandsinnovations@gmail.com</a></p>
+      <p class="fine">Tip: to collect messages via a form, create a free Formspree form and replace the action URL below.</p>
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <label>Name</label>
+        <input name="name" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Marker Model</label>
+        <input name="marker" placeholder="e.g., Geo R5, DLX Luxe, Emek" required>
+        <label>Coverage</label>
+        <select name="coverage">
+          <option>Barrel — text/logo</option>
+          <option>Barrel — 180° wrap</option>
+          <option>Barrel — full-length</option>
+          <option>Marker — side panel</option>
+          <option>Marker — both sides</option>
+          <option>Full-body theme</option>
+          <option>Accessories</option>
+        </select>
+        <label>Message</label>
+        <textarea name="message" rows="4" required></textarea><br>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- FOOTER with small logo -->
+    <footer>
+      <img class="footer-logo" src="IMG_3869.png" alt="Double J’s logo small">
+      <div>© <span id="y"></span> Double J’s Ink-N-Etch • Engraving</div>
+      <div class="fine">Serving St. Louis & St. Charles, MO</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
