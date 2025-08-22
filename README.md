@@ -1,4 +1,4 @@
- Double J’s Ink-N-Etch — Engraving Website
+# Double J’s Ink-N-Etch — Engraving Website
 
 This is the official website for **Double J’s Ink-N-Etch**, a St. Charles–based business specializing in:
 - Custom paintball marker engraving (full-body, barrels, grips, and accessories)
@@ -12,4 +12,4 @@ This is the official website for **Double J’s Ink-N-Etch**, a St. Charles–ba
 
 ## Live Website
 Once published with GitHub Pages, the site will be accessible here:  
-👉 https://**your-username**.github.io/**your-repo-name**/
+👉 https://goldenhands333.github.io/Double-Js-engraving-co/
