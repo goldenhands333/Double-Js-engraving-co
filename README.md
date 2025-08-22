@@ -13,3 +13,9 @@ This is the official website for **Double J’s Ink-N-Etch**, a St. Charles–ba
 ## Live Website
 Once published with GitHub Pages, the site will be accessible here:  
 👉 https://goldenhands333.github.io/Double-Js-engraving-co/
+/ (root)
+  index.html
+  styles.css
+  script.js
+  /assets
+    doublejs_main_logo.png   ← must exist, spelled exactly
